@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class ElectronicStoreTester {
     public static void main(String args[]) {
 
+        // instantiating the ElectronicStore class
         ElectronicStore store1 = new ElectronicStore("BestBuy");
         System.out.println("The store stock includes:");
         store1.printStock();
