@@ -5,9 +5,11 @@ public class Laptop {
     boolean SSD;
     int screenSize;
 
+    //zero-argument constructor
     public Laptop(){
     }
 
+    //five-argument constructor
     public Laptop(double initCPU, int initRAM, int initStorage, boolean initSSD, int initScreenSize){
         CPU = initCPU;
         RAM = initRAM;
@@ -16,6 +18,7 @@ public class Laptop {
         screenSize = initScreenSize;
     }
 
+    //toString method
     public String toString(){
         String storageType;
         storageType = "SSD";

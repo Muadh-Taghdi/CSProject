@@ -10,6 +10,7 @@ public class ElectronicStoreTester {
         System.out.println("");
 
 
+        // creating a Scanner instance
         Scanner myScanner = new Scanner(System.in); // creating a scanner object;
         while (true) {
             System.out.println("Enter a term to search for: ");
