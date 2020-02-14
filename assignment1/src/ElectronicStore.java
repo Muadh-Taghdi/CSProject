@@ -33,7 +33,7 @@ public class ElectronicStore {
         }
 
     }
-    //a void method called printStock() that will iterate over all of the store’s stock
+    //a void method called printStock() that will iterate over all of the store’s stock and print out stock
     public void printStock(){
         for(int i=0; i<desktopStock.length; i++){
             System.out.println(desktopStock[i].toString());
@@ -46,6 +46,7 @@ public class ElectronicStore {
         }
     }
 
+    // a method that returns a String with all inventory
     public String genInventoryString(){
         String inventory = " ";
         for(int i=0; i<3; i++){
@@ -54,6 +55,7 @@ public class ElectronicStore {
         return  inventory;
     }
 
+    // a method to search if a given item is in stock
     public boolean searchStock(String item){
         String inventory = genInventoryString().toUpperCase();
         item = item.toUpperCase();

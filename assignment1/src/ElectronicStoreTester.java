@@ -3,12 +3,14 @@ import java.util.Scanner;
 public class ElectronicStoreTester {
     public static void main(String args[]) {
 
+        // instantiating the ElectronicStore class
         ElectronicStore store1 = new ElectronicStore("BestBuy");
         System.out.println("The store stock includes:");
         store1.printStock();
         System.out.println("");
 
 
+        // creating a Scanner instance
         Scanner myScanner = new Scanner(System.in); // creating a scanner object;
         while (true) {
             System.out.println("Enter a term to search for: ");
