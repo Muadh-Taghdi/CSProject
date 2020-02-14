@@ -27,15 +27,13 @@ public class ElectronicStore {
     array, this method should just return false.
      */
     boolean addProduct(Product p){
-        boolean isFull = false;
         for(int i = 0; i < this.products.length; i++){
             if(this.products[i] == null){
                 this.products[i] = p;
-                isFull = true;
-                break;
+                return true;
             }
         }
-        return isFull;
+        return false;
     }
     /*
     void sellProducts() – this method should print out the store’s products (see example
